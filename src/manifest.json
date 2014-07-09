@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Opinion Invalidator",
+  "version": "1.0",
+  "description": "Helps you to get rid of all those honest opinions",
+
+
+  "content_scripts":
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["main.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
